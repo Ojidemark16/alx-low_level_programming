@@ -3,17 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * return : Always (0) success
+ * main - print random number to a variable each time it is executed
+ * Return: Always (0) success
  */
 int main(void)
 {
 int n;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
 if (n > 0)
 {
 printf("%d is positive\n", n);
